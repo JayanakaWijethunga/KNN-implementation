@@ -1,7 +1,7 @@
 
 let extractedFeatures;
 let capturedVideo;
-
+let KNNclassifier;
 
 
 function setup(){
@@ -14,7 +14,9 @@ function setup(){
 
 	//this featureExtractor which includes in ml5 libaray is used to load mobilenet feature extractor to this project
 
-	extractedFeatures=ml5.featureExtractor('MobileNet',ModelReady);
+    extractedFeatures=ml5.featureExtractor('MobileNet',ModelReady);
+    
+    KNNclassifier=ml5.kNNClassifier();
 
 
 }
